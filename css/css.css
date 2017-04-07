@@ -30,10 +30,56 @@
     display: block;
 }
 .btn {
-    width: 180px;
-    height: 126px;
+    width: 120px;
+    height: 84px;
     cursor: pointer;
 }
 .layer.credit{
     text-align: center;
+}
+
+
+
+.frame1 div.layer .background{
+    width: 100%;
+    height: 100%;
+}
+.frame1 div.layer .background img{
+    width: 100%;
+}
+.frame1 div.layer .banner{
+    width: 100%;
+    height: 100%;
+    padding: 100px 120px;
+}
+.frame1 div.layer .banner img{
+    width: 100%; /* Margin-left&right____1200*60/100 = 720____720/2=360px */
+    text-align: center;
+}
+.frame1 div.layer .bannerTextBox{
+    width: 100%;
+    height: 100%;
+}
+.frame1 div.layer .bannerText{
+    color: whitesmoke;
+}
+.frame1 div.layer .btn{
+    margin: 300px 536px;
+}
+.frame1 div.layer .playbutton{
+    background: url(../img/play.png);
+    background-size: cover;
+}
+.frame1 div.layer .playbutton:hover {
+    background: url(../img/playhover.png);
+    background-size: cover;
+}
+
+
+.frame2 div.layer .background{
+    width: 100%;
+    height: 100%;
+}
+.frame2 div.layer .background img{
+    width: 100%;
 }
