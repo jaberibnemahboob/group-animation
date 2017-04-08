@@ -9,13 +9,13 @@
 
     <body>
 
-        <audio class="sound" preload="auto">
-	       <!--<source src="audio/background_sound.mp3">-->
+        <audio class="background_sound" preload="auto">
+	       <source src="audio/background_sound.mp3">
         </audio>
 
         <div id="storyBoard">
 
-            <div class="frame frame1">
+            <div class="frame frame1 currentFrame">
                 <div class="layer">
                     <div class="background">
                         <img src="img/startingBackground.png" alt=""/>
@@ -31,31 +31,91 @@
                 </div>
             </div>
 
-            <div class="frame frame2 currentFrame">
-                <div class="layer">
-                    <div class="background">
+            <div class="frame frame2">
+                <div class="layer new_bg">
+                    <div class="background newbackground">
+                        <img src="img/stageBackground.png" alt=""/>
+                    </div>
+                </div>
+                <div class="layer old_bg">
+                    <div class="background oldbackground">
                         <img src="img/startingBackground.png" alt=""/>
                     </div>
                 </div>
-                <div class="layer">
-                    <div class="characterbox_piggy">
-                        <div class="character_piggy"></div>
+                <div class="layer pooh_char">
+                    <div class="character_pooh">
+                        <div class="characterbox">
+                            <img src="img/poohtin.png" alt=""/>
+                        </div>
                     </div>
                 </div>
-                <div class="layer">
-                    <div class="characterbox_pooh">
-                        <div class="character_pooh"></div>
+                <div class="layer piggy_char">
+                    <div class="character_piggy">
+                        <div class="characterbox">
+                            <img src="img/piggy.png" alt=""/>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="frame frame3">
-                <div class="layer">
+                <div class="layer new_bg">
+                    <div class="background newbackground">
+                        <img src="img/stageBackground.png" alt=""/>
+                    </div>
+                </div>
+                <div class="layer voice_of_piggy">
+                    <div class="voice voice_piggy">
+                        <img src="img/voice_piggy.png" alt=""/>
+                    </div>
+                </div>
+                <div class="layer voice_of_poohtin">
+                    <div class="voice voice_poohtin">
+                        <img src="img/voice_poohtin.png" alt=""/>
+                    </div>
+                </div>
+                <div class="layer pooh_char">
+                    <div class="character_pooh">
+                        <div class="characterbox">
+                            <img src="img/poohtin.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer piggy_char">
+                    <div class="character_piggy">
+                        <div class="characterbox">
+                            <img src="img/piggy.png" alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="frame frame4">
-                <div class="layer">
+                <div class="layer new_bg">
+                    <div class="background newbackground">
+                        <img src="img/stageBackground.png" alt=""/>
+                    </div>
+                </div>
+                <div class="layer pooh_char">
+                    <div class="character_pooh">
+                        <div class="characterbox">
+                            <img src="img/poohtin.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer jar_of_lies">
+                    <div class="jar">
+                        <div class="jarbox">
+                            <img src="img/jar_of_lies.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer piggy_char">
+                    <div class="character_piggy">
+                        <div class="characterbox">
+                            <img src="img/piggy.png" alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
