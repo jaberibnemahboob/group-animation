@@ -94,12 +94,12 @@
 }
 .frame2 div.layer .character_pooh{
     margin: 160px 480px;
-    animation: frame2_pooh_moveleft 4s forwards 2s;
+    animation: frame2_pooh_moveleft 2s forwards 2s;
 }
 .frame2 div.layer .character_piggy{
     margin-left: 1200px;
     margin-top: 60px;
-    animation: frame2_piggy_moveleft 4s forwards 2s;
+    animation: frame2_piggy_moveleft 2s forwards 2s, frame2_piggy_appears_from_nowhere 2s forwards 2s;
 }
 .frame2 div.layer .characterbox img{
     width: 100%;
@@ -108,11 +108,25 @@
     animation: fadeout 0.7s forwards;
 }
 .frame2 div.layer .newbackground{
-    animation: fadein 0.7s forwards, frame2_bg_moveleft 4s forwards 2s;
+    animation: fadein 0.7s forwards, frame2_bg_moveleft 2s forwards 2s;
 }
 @keyframes frame2_pooh_moveleft{
     to{
         margin-left: calc(50% - 350px);
+    }
+}
+@keyframes frame2_piggy_appears_from_nowhere{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    65%{
+        opacity: .25;
+    }
+    100%{
+        opacity: 1;
     }
 }
 @keyframes frame2_piggy_moveleft{
