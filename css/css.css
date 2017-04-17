@@ -164,6 +164,8 @@
     overflow: hidden;
 }
 .frame3 div.layer .voice.voice_piggy{
+    margin-top: 80px;
+    margin-left: 450px;
     animation: frame3_voice_appear 1s forwards 1s, frame3_voice_disappear 1s forwards 5s;
 }
 .frame3 div.layer .voice.voice_poohtin{
