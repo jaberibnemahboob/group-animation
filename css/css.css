@@ -253,7 +253,7 @@
 }
 @keyframes frame4_jar_zoomin{
     to{
-        width: 400px; /* 400x392px */
+        width: 3500px; /* 400x392px */
         margin-left: 400px; /* (1200-400)/2 = 400px; */
         /*margin-top: 108px; /* (600-392)/2 = 108px; */
         margin-top: 150px; /* (600-392)/2 = 108px; */
@@ -262,7 +262,39 @@
 
 
 
+/* FRAME #4 STYLE CONTROL */
+.frame5 div.layer .background{
+    width: 100%;
+    height: 100%;
+}
+.frame5 div.layer .background img{
+    width: 100%;
+}
+.frame5 div.layer .background.newbackground img{
+    width: 130%;
+    margin-left: -280px;
+}
+.frame5 div.layer .jarbox{
+    width: 350px;
+    margin-top: 150px;
+    margin-left: 400px;
+}
+.frame5 div.layer .jarbox img{
+    width: 100%;
+}
+.frame5 div.layer .element_bar{
+    height: 110px;
+    background-color: rgba(255,228,196, 0.4);
+    display: flex;
+    align-content: space-between;
+}
 
+.frame5 div.layer .each_element{
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    background-color: bisque;
+}
 
 
 
