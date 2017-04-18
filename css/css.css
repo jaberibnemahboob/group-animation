@@ -282,18 +282,27 @@
 .frame5 div.layer .jarbox img{
     width: 100%;
 }
-.frame5 div.layer .element_bar{
+.frame5 div.layer .element_bar_display{
+    margin: 0px;
     height: 110px;
     background-color: rgba(255,228,196, 0.4);
+}
+.frame5 div.layer .element_bar{
+    margin: 0px;
+    height: 110px;
+}
+.frame5 div.layer .element_bar .bar {
+    width: 990px;
+    margin: 0 auto;
     display: flex;
     align-content: space-between;
 }
-
 .frame5 div.layer .each_element{
     height: 90px;
     width: 90px;
     margin: 10px;
     background-color: bisque;
+    cursor: pointer;
 }
 
 
