@@ -172,14 +172,8 @@ function goframe8(){
     frame8_restart_btn.addEventListener("click",goframe2);
 }
 
-//RESTART
-function restart(){
-    //reset all js variable
-    //reset frame#5
-    //reset frame#6
-    //go frame#2
-}
 
 
 
+//RUN THE ANIMATION FROM FRAME 1
 goframe1();

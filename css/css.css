@@ -164,20 +164,27 @@
     width: 100%;
 }
 .frame3 div.layer .voice{
+    width: 750px;
+    opacity: 0;
+    overflow: hidden;
+
+    /*
     width: 300px;
     margin-top: -50px;
     margin-left: 475px;
     opacity: 0;
     overflow: hidden;
+    */
 }
 .frame3 div.layer .voice.voice_piggy{
-    margin-top: 80px;
-    margin-left: 450px;
-    animation: frame3_voice_appear 1s forwards 1s, frame3_voice_disappear 1s forwards 5s;
+    margin-top: -135px;
+    margin-left: 40px;
+    animation: fadein 1s forwards 1s, fadeout 1s forwards 5s;
 }
 .frame3 div.layer .voice.voice_poohtin{
-    margin-left: 380px;
-    animation: frame3_voice_appear 1s forwards 6s, frame3_voice_disappear 1s forwards 10s;
+    margin-top: -390px;
+    margin-left: 355px;
+    animation: fadein 1s forwards 6s, fadeout 1s forwards 10s;
 }
 .frame3 div.layer .voice img{
     width: 100%;
@@ -300,11 +307,13 @@
     width: 90px;
     margin: 10px;
     background-color: bisque;
+    cursor: all-scroll;
+}
+.frame5 div.layer .each_element.eastereggs{
     cursor: pointer;
 }
 .frame5 div.layer .each_element img{
     width: 100%;
-    cursor: pointer;
 }
 .frame5 div.layer .each_element.eastereggs{
     background-color:aqua;
