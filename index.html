@@ -13,9 +13,21 @@
 	       <source src="audio/background_sound.mp3">
         </audio>
 
+        <audio class="background_sound2" preload="auto">
+	       <source src="audio/background_sound2.mp3">
+        </audio>
+
+        <audio class="jar_of_lies_sound" preload="auto">
+	       <source src="audio/jar_of_liiiies.mp3">
+        </audio>
+
+        <audio class="boom_sound" preload="auto">
+	       <source src="audio/boom.mp3">
+        </audio>
+
         <div id="storyBoard">
 
-            <div class="frame frame1">
+            <div class="frame frame1 currentFrame">
                 <div class="layer">
                     <div class="background">
                         <img src="img/startingBackground.gif" alt=""/>
@@ -119,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="frame frame5 currentFrame">
+            <div class="frame frame5">
                 <div class="layer new_bg">
                     <div class="background newbackground">
                         <img src="img/stageBackground.gif" alt=""/>
@@ -138,44 +150,95 @@
                 <div class="layer orig_elements">
                     <div class="element_bar">
                         <div class="bar">
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
-                            <div class="each_element"></div>
+                            <div class="each_element dragdrop" draggable="true"></div>
+                            <div class="each_element eastereggs eastereggs1 frame5_show" draggable="true"></div>
+                            <div class="each_element dragdrop" draggable="true"></div>
+                            <div class="each_element dragdrop" draggable="true"></div>
+                            <div class="each_element eastereggs eastereggs2 frame5_hide" draggable="true"></div>
+                            <div class="each_element dragdrop" draggable="true"></div>
+                            <div class="each_element dragdrop" draggable="true"></div>
+                            <div class="each_element eastereggs eastereggs3 frame5_hide" draggable="true"></div>
+                            <div class="each_element dragdrop" draggable="true"></div>
+                        </div>
+                    </div>
+                    <div class="target_dropbox">
+                        <div class="dropbox"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frame frame6 ">
+                <div class="layer new_bg">
+                    <div class="background newbackground">
+                        <img src="img/stageBackground.gif" alt=""/>
+                    </div>
+                </div>
+                <div class="layer jar_of_lies">
+                    <div class="jar">
+                        <div class="jarbox">
+                            <img src="img/jar_of_lies.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer bomblayer">
+                    <div class="bomb_holder">
+                        <div class="bomb" draggable="true"></div>
+                    </div>
+                    <div class="target_dropbox">
+                        <div class="dropbox"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frame frame7">
+                <div class="layer new_bg">
+                    <div class="background newbackground">
+                        <img src="img/stageBackground.gif" alt=""/>
+                    </div>
+                </div>
+                <div class="layer jar_of_lies">
+                    <div class="jar">
+                        <div class="jarbox">
+                            <img src="img/jar_of_lies.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer boomlayer">
+                    <div class="boom">
+                        <div class="boombox">
+                            <img src="img/boom.png" alt=""/>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="frame frame6">
-                <div class="layer">
-                </div>
-            </div>
-
-            <div class="frame frame7">
-                <div class="layer">
-                </div>
-            </div>
-
             <div class="frame frame8">
-                <div class="layer">
+                <div class="layer stuff_bg">
+                    <div class="background stuffbackground">
+                        <img src="img/stageBackground.gif" alt=""/>
+                    </div>
+                </div>
+                <div class="layer stafflayer">
+                    <div class="staff">Stuff</div>
+                </div>
+                <div class="layer honeylayer">
+                    <div class="honey">&nbsp;&nbsp;Honey</div>
+                </div>
+                <div class="layer new_bg">
+                    <div class="background newbackground">
+                        <img src="img/stageBackground.gif" alt=""/>
+                    </div>
+                </div>
+                <div class="layer boomlayer">
+                    <div class="boom">
+                        <div class="boombox">
+                            <img src="img/boom.png" alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="frame frame9">
-                <div class="layer">
-                </div>
-            </div>
-
-            <div class="frame frame10">
-                <div class="layer">
-                </div>
-            </div>
+        </div>
 
         </div>
 

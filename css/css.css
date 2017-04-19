@@ -86,9 +86,6 @@
 .frame2 div.layer .background img{
     width: 100%;
 }
-.frame2 div.layer .background.newbackground img{
-    width: 130%;
-}
 .frame2 div.layer .characterbox{
     width: 200px;
 }
@@ -135,11 +132,6 @@
         margin-top: 160px;
     }
 }
-@keyframes frame2_bg_moveleft{
-    to{
-        margin-left: -280px;
-    }
-}
 
 
 
@@ -150,10 +142,6 @@
 }
 .frame3 div.layer .background img{
     width: 100%;
-}
-.frame3 div.layer .background.newbackground img{
-    width: 130%;
-    margin-left: -280px;
 }
 .frame3 div.layer .characterbox{
     width: 200px;
@@ -224,10 +212,6 @@
 .frame4 div.layer .background img{
     width: 100%;
 }
-.frame4 div.layer .background.newbackground img{
-    width: 130%;
-    margin-left: -280px;
-}
 .frame4 div.layer .characterbox{
     width: 200px;
     animation: fadeout 0.5s forwards 1.5s;
@@ -243,9 +227,9 @@
     width: 100%;
 }
 .frame4 div.layer .jarbox{
-    width: 108px;
-    margin-top: 288px;
-    margin-left: 247px;
+    width: 75px;
+    margin-top: 322px;
+    margin-left: 281px;
     animation: frame4_jar_zoomin 2s forwards 1.5s;
 }
 .frame4 div.layer .jarbox img{
@@ -254,7 +238,7 @@
 @keyframes frame4_jar_zoomin{
     to{
         width: 270px; /* 400x392px */
-        margin-left: 450px; /* (1200-400)/2 = 400px; */
+        margin-left: 460px; /* (1200-400)/2 = 400px; */
         /*margin-top: 108px; /* (600-392)/2 = 108px; */
         margin-top: 240px; /* (600-392)/2 = 108px; */
     }
@@ -270,14 +254,10 @@
 .frame5 div.layer .background img{
     width: 100%;
 }
-.frame5 div.layer .background.newbackground img{
-    width: 130%;
-    margin-left: -280px;
-}
 .frame5 div.layer .jarbox{
     width: 270px;
     margin-top: 240px;
-    margin-left: 450px;
+    margin-left: 460px;
 }
 .frame5 div.layer .jarbox img{
     width: 100%;
@@ -286,13 +266,23 @@
     margin: 0px;
     height: 110px;
     background-color: rgba(255,228,196, 0.4);
+    opacity: 0;
+    animation: fadein 1s forwards;
 }
 .frame5 div.layer .element_bar{
     margin: 0px;
-    height: 110px;
+    width: 100%;
+    opacity: 0;
+    animation: fadein 1s forwards;
+}
+.frame5 div.layer .element_bar_display.disappear{
+    animation: fadeout 1s forwards;
+}
+.frame5 div.layer .element_bar.disappear{
+    animation: fadeout 1s forwards;
 }
 .frame5 div.layer .element_bar .bar {
-    width: 990px;
+    width: 770px;
     margin: 0 auto;
     display: flex;
     align-content: space-between;
@@ -304,6 +294,231 @@
     background-color: bisque;
     cursor: pointer;
 }
+.frame5 div.layer .each_element.eastereggs{
+    background-color:aqua;
+}
+.frame5 div.layer .each_element:hover{
+    filter: drop-shadow(1px 1px 10px rgba(240, 248, 255, 1));
+}
+.frame5 div.layer .each_element.draggingstart{
+    animation: frame5_dragging_start 0.4s forwards;
+}
+.frame5 div.layer .each_element.draggingstop{
+    animation: frame5_dragging_stop 0.4s forwards;
+}
+.frame5 div.layer .each_element.droppintarget{
+    animation: frame5_dropintarget 0.3s forwards;
+}
+.frame5 div.layer .eastereggs.eastereggsappears{
+    animation: frame5_eastereggsappears 0.5s linear forwards;
+}
+.frame5 div.layer .eastereggs.eastereggsdisappears{
+    animation: frame5_eastereggsdisappears 0.5s linear forwards;
+}
+.frame5 div.layer .dropbox{
+    background-color: aqua;
+    width: 240px;
+    height: 140px;
+    margin-top: 100px;
+    margin-left: 475px;
+    opacity: 0;
+}
+.frame5_show{
+    display: block;
+}
+.frame5_hide{
+    display: none;
+}
+@keyframes frame5_dragging_start{
+    to{
+        height: 70px;
+        width: 70px;
+        margin: 20px;
+    }
+}
+@keyframes frame5_dragging_stop{
+    to{
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+    }
+}
+@keyframes frame5_dropintarget{
+    to{
+        height: 0px;
+        width: 0px;
+        margin: 55px;
+    }
+}
+@keyframes frame5_eastereggsdisappears{
+    from{
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+        opacity: 1;
+    }
+    to{
+        height: 0px;
+        width: 0px;
+        margin: 55px 0px;
+        opacity: 0;
+    }
+}
+@keyframes frame5_eastereggsappears{
+    from{
+        height: 0px;
+        width: 0px;
+        margin: 55px 0px;
+        opacity: 0;
+    }
+    to{
+        height: 90px;
+        width: 90px;
+        margin: 10px;
+        opacity: 1;
+    }
+}
+
+
+
+/* FRAME #6 STYLE CONTROL */
+.frame6 div.layer .background{
+    width: 100%;
+    height: 100%;
+}
+.frame6 div.layer .background img{
+    width: 100%;
+}
+.frame6 div.layer .jarbox{
+    width: 270px;
+    margin-top: 240px;
+    margin-left: 460px;
+}
+.frame6 div.layer .jarbox img{
+    width: 100%;
+}
+.frame6 div.layer .bomb_holder {
+    opacity: 0;
+    height: 120px;
+    margin-top: 80px;
+    margin-left: 750px;
+    animation: fadein 1s forwards;
+}
+.frame6 div.layer .bomb{
+    cursor: pointer;
+    background-color: red;
+    width: 120px;
+    height: 120px;
+}
+.frame6 div.layer .bomb:hover{
+    filter: drop-shadow(1px 1px 10px rgba(240,248,255,1));
+    animation: frame6_sizzling 1s;
+}
+.frame6 div.layer .bomb.draggingstart{
+    animation: frame5_dragging_start 0.4s forwards; /*same animation available in frame #5*/
+}
+.frame6 div.layer .bomb.draggingstop{
+    animation: frame5_dragging_stop 0.4s forwards; /*same animation available in frame #5*/
+}
+.frame6 div.layer .bomb.droppintarget{
+    animation: frame5_dropintarget 0.3s forwards; /*same animation available in frame #5*/
+}
+.frame6 div.layer .dropbox{
+    background-color: aqua;
+    width: 240px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 475px;
+    opacity: 0;
+}
+@keyframes frame6_sizzling {
+    10%, 90% {transform: translate(-1px, 0);}
+    20%, 80% {transform: translate(2px, 0);}
+    30%, 50%, 70% {transform: translate(-4px, 0);}
+    40%, 60% {transform: translate(4px, 0);}
+}}
+
+
+/* FRAME #7 STYLE CONTROL */
+.frame7 div.layer .background{
+    width: 100%;
+    height: 100%;
+}
+.frame7 div.layer .background img{
+    width: 100%;
+}
+.frame7 div.layer .jarbox{
+    width: 270px;
+    margin-top: 240px;
+    margin-left: 460px;
+    animation: frame7_jar_zoomout 0.1s forwards 1.4s;
+}
+.frame7 div.layer .jarbox img{
+    width: 100%;
+}
+.frame7 div.layer .boombox{
+    width: 1px;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: frame7_boom_zoomin 1.5s forwards cubic-bezier(1,0,1,-0.13);
+}
+.frame7 div.layer .boombox img{
+    width: 100%;
+}
+@keyframes frame7_boom_zoomin{
+    to{
+        width: 500px;
+        margin-top: 120px;
+    }
+}
+@keyframes frame7_jar_zoomout{
+    to{
+        width: 170px;
+        margin-top: 290px;
+        margin-left: 510px;
+    }
+}
+
+
+/* FRAME #8 STYLE CONTROL */
+.frame8 div.layer .background{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.frame8 div.layer .background.newbackground{
+    animation: fadeout 1.5s forwards;
+}
+.frame8 div.layer .background img{
+    width: 100%;
+}
+.frame8 div.layer .boombox{
+    width: 500px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    animation: fadeout 1.5s forwards;
+}
+.frame8 div.layer .boombox img{
+    width: 100%;
+}
+.frame8 div.layer .stafflayer{
+
+}
+.frame8 div.layer .staff{
+
+}
+.frame8 div.layer .honeylayer{
+
+}
+.frame8 div.layer .honey{
+
+}
+
+
+
 
 
 
