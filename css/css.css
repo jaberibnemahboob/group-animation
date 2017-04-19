@@ -18,6 +18,9 @@
     background: none;
     position: relative;
 }
+.hiddenframe{
+    display: none;
+}
 .layer{
     width: 100%;
     height: 100%;
@@ -504,20 +507,48 @@
 .frame8 div.layer .boombox img{
     width: 100%;
 }
-.frame8 div.layer .stafflayer{
-
-}
 .frame8 div.layer .staff{
-
+    margin-top: -750px;
+    animation: honeydrippingwall 20s linear forwards;
 }
-.frame8 div.layer .honeylayer{
-
+.frame8 div.layer .stuffdata{
+    height: 300px;
+    width: 800px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 300px; /* 150 default 150 extra */
+    font-size: 1.5em;
+    display: flex;
+    align-content: space-around;
+}
+.frame8 div.layer .stuffdata div.subbox{
+    width: 50%;
+}
+.frame8 div.layer .stuffdata div.restart_btn{
+    margin: 0 auto;
+    margin-top: 88px;
+    width: 180px;
+    height: 126px;
+    background-image: url(../img/repeat.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.frame8 div.layer .stuffdata div.restart_btn:hover{
+    background-image: url(../img/repeathover.png);
+    background-size: cover;
 }
 .frame8 div.layer .honey{
-
+    margin-top: -750px;
+    animation: honeydrippingwall 20s linear forwards;
 }
-
-
+.frame8 div.layer .honey img{
+    width: 100%;
+}
+@keyframes honeydrippingwall {
+    to{
+        margin-top: -150px;
+    }
+}
 
 
 
