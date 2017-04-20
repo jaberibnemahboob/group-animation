@@ -11,7 +11,9 @@ let frame7 = document.querySelector(".frame7");
 let frame8 = document.querySelector(".frame8");
 
 let backgroundsound = document.querySelector(".background_sound");
+backgroundsound.volume = 0.6;
 let backgroundsound2 = document.querySelector(".background_sound2");
+backgroundsound2.volume = 0.6;
 let jarofliessound = document.querySelector(".jar_of_lies_sound");
 let boomsound = document.querySelector(".boom_sound");
 let eastereggssound = document.querySelector(".eastereggssound");
@@ -96,6 +98,11 @@ function goframe5(){
             frame5_drop_target_index = -1;
         },false);
     }
+    function handle_eastereggs_drag_to_click(item, index){
+        item.addEventListener("dragstart",function(){
+            item.click();
+        },false);
+    }
     function handle_eastereggs(item, index){
         item.addEventListener("click",function(){
             if(index==2) {
@@ -113,6 +120,7 @@ function goframe5(){
                 newItem.classList.add("eastereggsappears");
             }
         });
+        handle_eastereggs_drag_to_click(item, index);
     }
 
     frame5_target_dropbox.addEventListener("dragenter",function(event){event.preventDefault();},false);
