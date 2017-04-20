@@ -71,12 +71,12 @@
     margin: 450px 536px;
 }
 .frame1 div.layer .playbutton{
-    background: url(../img/play.png);
+    background: url(../img/play.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 .frame1 div.layer .playbutton:hover {
-    background: url(../img/playhover.png);
+    background: url(../img/playhover.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -550,13 +550,13 @@
     margin-top: 88px;
     width: 180px;
     height: 126px;
-    background-image: url(../img/repeat.png);
+    background-image: url(../img/repeat.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .frame8 div.layer .stuffdata div.restart_btn:hover{
-    background-image: url(../img/repeathover.png);
+    background-image: url(../img/repeathover.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }

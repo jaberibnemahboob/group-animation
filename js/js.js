@@ -41,6 +41,7 @@ function goframe2(){
     let frame2_char_piggy = document.querySelector(".frame2 .character_piggy");
     hideCurrentFrame(); frame2.classList.add("currentFrame");
     backgroundsound.currentTime = 0; backgroundsound.play();
+    backgroundsound2.currentTime = 0; backgroundsound2.pause();
     frame2_char_piggy.addEventListener("animationend",goframe3);
 }
 //FRAME CONTROL #3
@@ -51,9 +52,10 @@ function goframe3(){
 }
 //FRAME CONTROL #4
 function goframe4(){
+    let frame4_background = document.querySelector(".frame4 .background.newbackground");
     hideCurrentFrame(); frame4.classList.add("currentFrame");
-    jarofliessound.currentTime = 0; jarofliessound.play();
-    jarofliessound.addEventListener("ended",goframe5);
+    setTimeout(function(){jarofliessound.currentTime = 0; jarofliessound.play();},2000);
+    frame4_background.addEventListener("animationend",goframe5);
 }
 //FRAME CONTROL #5
 function goframe5(){
