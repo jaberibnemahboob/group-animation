@@ -434,10 +434,10 @@
     animation: fadein 1s forwards;
 }
 .frame6 div.layer .bomb{
-    cursor: pointer;
-    background-color: red;
+    cursor: all-scroll;
     width: 120px;
     height: 120px;
+    width: 100%;
 }
 .frame6 div.layer .bomb:hover{
     filter: drop-shadow(1px 1px 10px rgba(240,248,255,1));
