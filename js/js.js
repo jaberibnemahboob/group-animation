@@ -140,7 +140,7 @@ function goframe5(){
         if(frame5_drop_count >= 3){
             frame5_bar.classList.add("disappear");
             frame5_bar_display.classList.add("disappear");
-            frame5_bar_display.addEventListener("animationend",goframe6);
+            frame5_bar.addEventListener("animationend",goframe6);
         }
     },false);
 }
@@ -197,4 +197,4 @@ function goframe8(){
 
 
 //RUN THE ANIMATION FROM FRAME 1
-goframe1();
+goframe5();
