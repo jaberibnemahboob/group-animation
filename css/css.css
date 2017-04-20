@@ -168,9 +168,9 @@
     overflow: hidden;
 }
 .frame3 div.layer .voice.voice_piggy{
-    width: 750px;
-    margin-top: -135px;
-    margin-left: 40px;
+    width: 900px;
+    margin-top: -270px;
+    margin-left: -120px;
     animation: fadein 1s forwards 1s, fadeout 1s forwards 6s;
 }
 .frame3 div.layer .voice.voice_poohtin{
