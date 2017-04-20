@@ -498,7 +498,7 @@
 }
 @keyframes frame7_boom_zoomin{
     to{
-        width: 500px;
+        width: 800px;
         margin-top: 120px;
     }
 }
@@ -524,7 +524,7 @@
     width: 100%;
 }
 .frame8 div.layer .boombox{
-    width: 500px;
+    width: 800px;
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
