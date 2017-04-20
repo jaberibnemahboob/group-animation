@@ -153,12 +153,12 @@
 }
 .frame3 div.layer .character_pooh{
     margin: 160px 247px;
-    animation: frame3_talking_effect 1s reverse 6 9s;
+    animation: frame3_talking_effect 1s reverse 2 7s;
 }
 .frame3 div.layer .character_piggy{
     margin-left: 747px;
     margin-top: 160px;
-    animation: frame3_talking_effect 1s reverse 6 2s;
+    animation: frame3_talking_effect 1s reverse 2 1s;
 }
 .frame3 div.layer .characterbox img{
     width: 100%;
@@ -171,13 +171,13 @@
     width: 750px;
     margin-top: -135px;
     margin-left: 40px;
-    animation: fadein 1s forwards 1s, fadeout 1s forwards 8s;
+    animation: fadein 1s forwards 1s, fadeout 1s forwards 6s;
 }
 .frame3 div.layer .voice.voice_poohtin{
     width: 1000px;
     margin-top: -530px;
     margin-left: 370px;
-    animation: fadein 1s forwards 9s, fadeout 1s forwards 16s;
+    animation: fadein 1s forwards 7s, fadeout 1s forwards 12s;
 }
 .frame3 div.layer .voice img{
     width: 100%;
@@ -215,14 +215,14 @@
     height: 100%;
 }
 .frame4 div.layer .background.newbackground{
-    animation: fadeout 1.5s forwards 3.5s;
+    animation: fadeout 1.5s forwards 2s;
 }
 .frame4 div.layer .background img{
     width: 100%;
 }
 .frame4 div.layer .characterbox{
     width: 200px;
-    animation: fadeout 0.5s forwards 1.5s;
+    animation: fadeout 0.5s forwards;
 }
 .frame4 div.layer .character_pooh{
     margin: 160px 247px;
@@ -238,7 +238,7 @@
     width: 75px;
     margin-top: 322px;
     margin-left: 281px;
-    animation: frame4_jar_zoomin 2s forwards 1.5s;
+    animation: frame4_jar_zoomin 2s forwards;
 }
 .frame4 div.layer .jarbox img{
     width: 100%;

@@ -49,9 +49,13 @@ function goframe2(){
 }
 //FRAME CONTROL #3
 function goframe3(){
-    let frame3_char_poohtin = document.querySelector(".frame3 .character_pooh");
+    let frame3_char_poohtin = document.querySelector(".frame3 .voice_poohtin");
     hideCurrentFrame(); frame3.classList.add("currentFrame");
-    frame3_char_poohtin.addEventListener("animationend",goframe4);
+    frame3_char_poohtin.addEventListener("animationend",function(){
+        setTimeout(function(){
+            goframe4();
+        },4000);
+    });
 }
 //FRAME CONTROL #4
 function goframe4(){
