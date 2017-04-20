@@ -17,6 +17,8 @@ backgroundsound2.volume = 0.4;
 let jarofliessound = document.querySelector(".jar_of_lies_sound");
 let boomsound = document.querySelector(".boom_sound");
 let eastereggssound = document.querySelector(".eastereggssound");
+let eastereggssound2 = document.querySelector(".eastereggssound2");
+let eastereggssound3 = document.querySelector(".eastereggssound3");
 
 
 //GENRAL FUNCTIONS/CONTROL
@@ -109,9 +111,9 @@ function goframe5(){
     }
     function handle_eastereggs(item, index){
         item.addEventListener("click",function(){
-            if(index==2) {
-                eastereggssound.currentTime = 0; eastereggssound.play();
-            }
+            if(index==0) {eastereggssound.currentTime = 0; eastereggssound.play();}
+            if(index==1) {eastereggssound2.currentTime = 0; eastereggssound2.play();}
+            if(index==2) {eastereggssound3.currentTime = 0; eastereggssound3.play();}
             item.classList.add("eastereggsdisappears");
             item.addEventListener("animationend",function(){
                 item.classList.remove("frame5_show");
