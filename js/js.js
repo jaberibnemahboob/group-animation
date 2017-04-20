@@ -10,10 +10,13 @@ let frame6 = document.querySelector(".frame6");
 let frame7 = document.querySelector(".frame7");
 let frame8 = document.querySelector(".frame8");
 
+let initialVolume = 0.7;
+let doubleSoundVolume = 0.3;
+
 let backgroundsound = document.querySelector(".background_sound");
-backgroundsound.volume = 0.3;
+backgroundsound.volume = initialVolume;
 let backgroundsound2 = document.querySelector(".background_sound2");
-backgroundsound2.volume = 0.3;
+backgroundsound2.volume = initialVolume;
 let jarofliessound = document.querySelector(".jar_of_lies_sound");
 let boomsound = document.querySelector(".boom_sound");
 let eastereggssound = document.querySelector(".eastereggssound");
@@ -76,13 +79,16 @@ function goframe5(){
     let frame5_drop_count = 0;
     let frame5_drop_target_index = -1;
     let frame5_bar = document.querySelector(".frame5 .element_bar");
+    let frame5_bar_bar = document.querySelector(".frame5 .element_bar .bar");
     let frame5_bar_display = document.querySelector(".frame5 .element_bar_display");
     let frame5_target_dropbox = document.querySelector(".frame5 .dropbox");
 
     hideCurrentFrame(); frame5.classList.add("currentFrame");
 
     frame5_target_dropbox.addEventListener("click",function(){
+        backgroundsound.volume = doubleSoundVolume;
         jarofliessound.currentTime = 0; jarofliessound.play();
+        jarofliessound.addEventListener("ended", function(){backgroundsound.volume = initialVolume;});
     });
 
     frame5_dragable_elements.forEach(handle_dragdrop);
@@ -111,19 +117,40 @@ function goframe5(){
     }
     function handle_eastereggs(item, index){
         item.addEventListener("click",function(){
-            if(index==0) {eastereggssound.currentTime = 0; eastereggssound.play();}
-            if(index==1) {eastereggssound2.currentTime = 0; eastereggssound2.play();}
-            if(index==2) {eastereggssound3.currentTime = 0; eastereggssound3.play();}
-            item.classList.add("eastereggsdisappears");
-            item.addEventListener("animationend",function(){
-                item.classList.remove("frame5_show");
-                item.classList.add("frame5_hide");
-            });
-            if(index < 2){ //largest index is 2
-                let newItem = frame5_easter_eggs[(index+1)];
-                newItem.classList.remove("frame5_hide");
-                newItem.classList.add("frame5_show");
-                newItem.classList.add("eastereggsappears");
+            if(index==0) {
+                backgroundsound.volume = doubleSoundVolume;
+                eastereggssound.currentTime = 0;
+                eastereggssound.play();
+                eastereggssound.addEventListener("ended", function(){hideeasteregg(); backgroundsound.volume = initialVolume; });
+            }
+            if(index==1) {
+                backgroundsound.volume = doubleSoundVolume;
+                eastereggssound2.currentTime = 0;
+                eastereggssound2.play();
+                eastereggssound2.addEventListener("ended", function(){hideeasteregg(); backgroundsound.volume = initialVolume; });
+            }
+            if(index==2) {
+                backgroundsound.volume = doubleSoundVolume;
+                eastereggssound3.currentTime = 0;
+                eastereggssound3.play();
+                eastereggssound3.addEventListener("ended", function(){
+                    hideeasteregg();
+                    backgroundsound.volume = initialVolume;
+                    frame5_bar_bar.classList.add("alleastereggsgone");
+                });
+            }
+            function hideeasteregg(){
+                item.classList.add("eastereggsdisappears");
+                item.addEventListener("animationend",function(){
+                    item.classList.remove("frame5_show");
+                    item.classList.add("frame5_hide");
+                });
+                if(index < 2){ //largest index is 2
+                    let newItem = frame5_easter_eggs[(index+1)];
+                    newItem.classList.remove("frame5_hide");
+                    newItem.classList.add("frame5_show");
+                    newItem.classList.add("eastereggsappears");
+                }
             }
         });
         handle_eastereggs_drag_to_click(item, index);
@@ -185,7 +212,7 @@ function goframe7(){
     frame7.classList.add("currentFrame");
     backgroundsound.currentTime = 0; backgroundsound.pause();
     backgroundsound2.currentTime = 0; backgroundsound2.play();
-    setTimeout(function(){boomsound.play()}, 10);
+    setTimeout(function(){boomsound.currentTime = 0; boomsound.play(); }, 10);
     frame7_boom.addEventListener("animationend",setTimeout(function(){goframe8();}, 2000));
 }
 //FRAME CONTROL #8

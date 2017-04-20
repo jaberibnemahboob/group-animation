@@ -296,6 +296,9 @@
     display: flex;
     align-content: space-between;
 }
+.frame5 div.layer .element_bar .bar.alleastereggsgone {
+    width: 1020px;
+}
 .frame5 div.layer .each_element{
     height: 120px;
     width: 120px;
