@@ -98,7 +98,7 @@ function goframe5(){
             item.addEventListener("animationend",function(){
                 item.classList.remove("frame5_show");
                 item.classList.add("frame5_hide");
-            })
+            });
             if(index < 2){ //largest index is 2
                 let newItem = frame5_easter_eggs[(index+1)];
                 newItem.classList.remove("frame5_hide");
