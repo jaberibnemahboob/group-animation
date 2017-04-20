@@ -291,7 +291,7 @@
     animation: fadein 1s forwards;
 }
 .frame5 div.layer .element_bar_display.disappear{
-    animation: fadeout 1s forwards 1s;
+    animation: fadeout 1s forwards;
 }
 .frame5 div.layer .element_bar.disappear{
     animation: fadeout 1s forwards;
