@@ -185,4 +185,4 @@ function goframe8(){
 
 
 //RUN THE ANIMATION FROM FRAME 1
-goframe6();
+goframe1();
