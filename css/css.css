@@ -153,38 +153,31 @@
 }
 .frame3 div.layer .character_pooh{
     margin: 160px 247px;
-    animation: frame3_talking_effect 1s reverse 3 7s;
+    animation: frame3_talking_effect 1s reverse 6 9s;
 }
 .frame3 div.layer .character_piggy{
     margin-left: 747px;
     margin-top: 160px;
-    animation: frame3_talking_effect 1s reverse 3 2s;
+    animation: frame3_talking_effect 1s reverse 6 2s;
 }
 .frame3 div.layer .characterbox img{
     width: 100%;
 }
 .frame3 div.layer .voice{
-    width: 750px;
     opacity: 0;
     overflow: hidden;
-
-    /*
-    width: 300px;
-    margin-top: -50px;
-    margin-left: 475px;
-    opacity: 0;
-    overflow: hidden;
-    */
 }
 .frame3 div.layer .voice.voice_piggy{
+    width: 750px;
     margin-top: -135px;
     margin-left: 40px;
-    animation: fadein 1s forwards 1s, fadeout 1s forwards 5s;
+    animation: fadein 1s forwards 1s, fadeout 1s forwards 8s;
 }
 .frame3 div.layer .voice.voice_poohtin{
-    margin-top: -390px;
-    margin-left: 355px;
-    animation: fadein 1s forwards 6s, fadeout 1s forwards 10s;
+    width: 1000px;
+    margin-top: -530px;
+    margin-left: 370px;
+    animation: fadein 1s forwards 9s, fadeout 1s forwards 16s;
 }
 .frame3 div.layer .voice img{
     width: 100%;
