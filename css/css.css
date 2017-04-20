@@ -101,7 +101,7 @@
 .frame2 div.layer .character_piggy{
     margin-left: 1200px;
     margin-top: 60px;
-    animation: frame2_piggy_moveleft 2s forwards 2s, frame2_piggy_appears_from_nowhere 2s forwards 2s;
+    animation: frame2_piggy_appears_from_nowhere 2s forwards 2s;
 }
 .frame2 div.layer .characterbox img{
     width: 100%;
