@@ -14,6 +14,7 @@ let backgroundsound = document.querySelector(".background_sound");
 let backgroundsound2 = document.querySelector(".background_sound2");
 let jarofliessound = document.querySelector(".jar_of_lies_sound");
 let boomsound = document.querySelector(".boom_sound");
+let eastereggssound = document.querySelector(".eastereggssound");
 
 
 //GENRAL FUNCTIONS/CONTROL
@@ -54,7 +55,6 @@ function goframe3(){
 function goframe4(){
     let frame4_background = document.querySelector(".frame4 .background.newbackground");
     hideCurrentFrame(); frame4.classList.add("currentFrame");
-    setTimeout(function(){jarofliessound.currentTime = 0; jarofliessound.play();},2000);
     frame4_background.addEventListener("animationend",goframe5);
 }
 //FRAME CONTROL #5
@@ -72,6 +72,10 @@ function goframe5(){
     let frame5_target_dropbox = document.querySelector(".frame5 .dropbox");
 
     hideCurrentFrame(); frame5.classList.add("currentFrame");
+
+    frame5_target_dropbox.addEventListener("click",function(){
+        jarofliessound.currentTime = 0; jarofliessound.play();
+    });
 
     frame5_dragable_elements.forEach(handle_dragdrop);
     frame5_easter_eggs.forEach(handle_eastereggs);
@@ -94,6 +98,9 @@ function goframe5(){
     }
     function handle_eastereggs(item, index){
         item.addEventListener("click",function(){
+            if(index==2) {
+                eastereggssound.currentTime = 0; eastereggssound.play();
+            }
             item.classList.add("eastereggsdisappears");
             item.addEventListener("animationend",function(){
                 item.classList.remove("frame5_show");
@@ -178,4 +185,4 @@ function goframe8(){
 
 
 //RUN THE ANIMATION FROM FRAME 1
-goframe1();
+goframe4();
