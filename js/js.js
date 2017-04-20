@@ -11,9 +11,9 @@ let frame7 = document.querySelector(".frame7");
 let frame8 = document.querySelector(".frame8");
 
 let backgroundsound = document.querySelector(".background_sound");
-backgroundsound.volume = 0.6;
+backgroundsound.volume = 0.4;
 let backgroundsound2 = document.querySelector(".background_sound2");
-backgroundsound2.volume = 0.6;
+backgroundsound2.volume = 0.4;
 let jarofliessound = document.querySelector(".jar_of_lies_sound");
 let boomsound = document.querySelector(".boom_sound");
 let eastereggssound = document.querySelector(".eastereggssound");
