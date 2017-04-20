@@ -431,12 +431,13 @@
     height: 120px;
     margin-top: 80px;
     margin-left: 750px;
+    width: 120px;
     animation: fadein 1s forwards;
 }
 .frame6 div.layer .bomb{
     cursor: all-scroll;
-    width: 140px;
-    height: auto;
+    width: 100%;
+
 }
 .frame6 div.layer .bomb:hover{
     filter: drop-shadow(1px 1px 10px rgba(240,248,255,1));
