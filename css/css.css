@@ -271,6 +271,7 @@
     width: 100%;
 }
 .frame5 div.layer .element_bar_display{
+    display: none;
     margin: 0px;
     height: 110px;
     background-color: rgba(255,228,196, 0.4);
@@ -290,15 +291,15 @@
     animation: fadeout 1s forwards;
 }
 .frame5 div.layer .element_bar .bar {
-    width: 770px;
+    width: 1190px;
     margin: 0 auto;
     display: flex;
     align-content: space-between;
 }
 .frame5 div.layer .each_element{
-    height: 90px;
-    width: 90px;
-    margin: 10px;
+    height: 120px;
+    width: 120px;
+    margin: 10px 25px;
     cursor: all-scroll;
 }
 .frame5 div.layer .each_element.eastereggs{
@@ -339,8 +340,8 @@
 .frame5 div.layer .dropbox{
     background-color: aqua;
     width: 270px;
-    height: 240px;
-    margin-top: 140px;
+    height: 270px;
+    margin-top: 90px;
     margin-left: 460px;
     opacity: 0;
     cursor: pointer;
@@ -353,36 +354,36 @@
 }
 @keyframes frame5_dragging_start{
     to{
-        height: 70px;
-        width: 70px;
-        margin: 20px;
+        height: 90px;
+        width: 90px;
+        margin: 35px 40px;
     }
 }
 @keyframes frame5_dragging_stop{
     to{
-        height: 90px;
-        width: 90px;
-        margin: 10px;
+        height: 120px;
+        width: 120px;
+        margin: 10px 25px;
     }
 }
 @keyframes frame5_dropintarget{
     to{
         height: 0px;
         width: 0px;
-        margin: 55px;
+        margin: 70px 85;
     }
 }
 @keyframes frame5_eastereggsdisappears{
     from{
-        height: 90px;
-        width: 90px;
-        margin: 10px;
+        height: 120px;
+        width: 120px;
+        margin: 10px 25px;
         opacity: 1;
     }
     to{
         height: 0px;
         width: 0px;
-        margin: 55px 0px;
+        margin: 70px 0px;
         opacity: 0;
     }
 }
@@ -390,13 +391,13 @@
     from{
         height: 0px;
         width: 0px;
-        margin: 55px 0px;
+        margin: 70px 0px;
         opacity: 0;
     }
     to{
-        height: 90px;
-        width: 90px;
-        margin: 10px;
+        height: 120px;
+        width: 120px;
+        margin: 10px 25px;
         opacity: 1;
     }
 }
@@ -578,17 +579,11 @@
 
 
 @keyframes fadein{
-    from{
-        opacity: 0;
-    }
     to{
         opacity: 1;
     }
 }
 @keyframes fadeout{
-    from{
-        opacity: 1;
-    }
     to{
         opacity: 0;
     }
