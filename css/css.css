@@ -316,9 +316,6 @@
     width: 100%;
 }
 .frame5 div.layer .each_element.eastereggs img:hover{
-<<<<<<< HEAD
-    background-color:aqua;
-=======
     animation: frame5_doll_wiggle 1s;
 }
 @keyframes frame5_doll_wiggle {
@@ -326,7 +323,6 @@
     20%, 80% {transform: translate(2px, 0) rotate(-2deg);}
     30%, 50%, 70% {transform: translate(-4px, 0)rotate(3deg);}
     40%, 60% {transform: translate(4px, 0)rotate(-4deg);}
->>>>>>> origin/master
 }
 
 
