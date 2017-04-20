@@ -435,9 +435,8 @@
 }
 .frame6 div.layer .bomb{
     cursor: all-scroll;
-    width: 120px;
-    height: 120px;
-    width: 100%;
+    width: 140px;
+    height: auto;
 }
 .frame6 div.layer .bomb:hover{
     filter: drop-shadow(1px 1px 10px rgba(240,248,255,1));
